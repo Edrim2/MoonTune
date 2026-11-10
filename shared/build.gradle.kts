@@ -1,3 +1,4 @@
+
 plugins {
     kotlin("multiplatform")
     alias(libs.plugins.compose.multiplatform)
@@ -56,6 +57,23 @@ kotlin {
 
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
+        }
+    }
+}
+
+// MoonTune Desktop
+compose.desktop {
+    application {
+        mainClass = "com.omnitune.shared.MainKt"
+
+        nativeDistributions {
+            packageName = "MoonTune"
+            packageVersion = "0.1.0"
+
+            targetFormats(
+                org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi,
+                org.jetbrains.compose.desktop.application.dsl.TargetFormat.Deb
+            )
         }
     }
 }
