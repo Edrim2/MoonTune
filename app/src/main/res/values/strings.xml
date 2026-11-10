@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MoonTune</string>
-    <string name="music_player_channel_name">OmniTune Playback</string>
-    <string name="download_channel_name">OmniTune Downloads</string>
+    <string name="music_player_channel_name">MoonTune Playback</string>
+    <string name="download_channel_name">MoonTune Downloads</string>
     <string name="debug_crash_occurred">CRASH OCCURRED:\n\n%1$s</string>
 
     <!-- Year in Music -->
